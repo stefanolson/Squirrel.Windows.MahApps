@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MahApps.Metro;
 using ReactiveUI;
 
 namespace Shimmer.WiXUi.Views
@@ -20,7 +21,7 @@ namespace Shimmer.WiXUi.Views
     /// <summary>
     /// Interaction logic for RootWindow.xaml
     /// </summary>
-    public partial class RootWindow : Window
+    public partial class RootWindow
     {
         public RootWindow()
         {
@@ -31,6 +32,8 @@ namespace Shimmer.WiXUi.Views
                 .Where(x => x)
                 .Subscribe(_ => { this.Width = viewHost.Width; this.Height = viewHost.Height; });
             */
+
+            this.Loaded += (sender, args) => ThemeManager.ChangeAppTheme(Application.Current, "BaseDark");
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Shimmer.WiXUi
             RxApp.LoggerFactory = _ => new FileLogger("Shimmer") { Level = ReactiveUI.LogLevel.Info };
             ReactiveUIMicro.RxApp.ConfigureFileLogging(); // HACK: we can do better than this later
 
-            theApp = new Application();
+            theApp = new MetroApp();
 
             // NB: These are mirrored instead of just exposing Command because
             // Command is impossible to mock, since there is no way to set any

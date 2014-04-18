@@ -15,4 +15,4 @@
     $MSBuildVerbosity = "quiet"
 )
 
-& "$(get-content env:windir)\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" $Project /t:$build /p:Configuration=$config /verbosity:$MSBuildVerbosity
+& "$(get-content env:windir)\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" $Project /t:$build /p:Configuration=$config /p:Platform="Any CPU" /verbosity:$MSBuildVerbosity

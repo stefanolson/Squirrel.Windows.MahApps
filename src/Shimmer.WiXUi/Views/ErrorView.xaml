@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Background="White"
+             mc:Ignorable="d"
              Height="500" Width="360">
 
     <Grid Margin="0,16,0,16">
@@ -14,13 +14,13 @@
         </Grid.RowDefinitions>
 
         <TextBlock x:Name="Title" Text="Failed to Install" FontWeight="ExtraLight" FontSize="32" Margin="8,0,0,0"/>
-        <Border Grid.Row="1" Margin="0,16,0,0" Background="#efefef" BorderBrush="LightGray" BorderThickness="0,1,0,1">
+        <Border Grid.Row="1" Margin="0,16,0,0">
             <StackPanel>
                 <TextBlock x:Name="ErrorMessage" FontSize="14" TextWrapping="WrapWithOverflow" Margin="16" />
 
                 <TextBlock x:Name="GoToLogs" FontSize="14" TextWrapping="WrapWithOverflow" Margin="16">
                     <Run Text="Please check"/>
-                    <Hyperlink x:Name="LogsCommand">the logs folder</Hyperlink>
+                    <Hyperlink x:Name="LogsCommand" Foreground="{DynamicResource AccentColorBrush}">the logs folder</Hyperlink>
                     <Run Text="for more details"/>
                 </TextBlock>
 
@@ -30,7 +30,7 @@
 
         <!-- NB: Left this here so the spacing doesn't change-->
         <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Light" FontSize="36" Margin="0,8,0,0">
-            <Hyperlink x:Name="Shutdown">Close</Hyperlink>
+            <Hyperlink x:Name="Shutdown" Foreground="{DynamicResource AccentColorBrush}">Close</Hyperlink>
         </TextBlock>
     </Grid>
 </UserControl>

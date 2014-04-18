@@ -46,5 +46,6 @@
     <file src="..\..\bin\System.Reactive.PlatformServices.dll" target="tools" />
     <file src="..\..\bin\System.Reactive.Windows.Threading.dll" target="tools" />
     <file src="..\..\bin\System.Windows.Interactivity.dll" target="tools" />
+    <file src="..\..\bin\MahApps.Metro.dll" target="tools" />
   </files>
 </package>

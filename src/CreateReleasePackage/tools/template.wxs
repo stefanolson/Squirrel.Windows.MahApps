@@ -27,6 +27,7 @@
       <Payload SourceFile="$(var.ToolsDir)\System.Reactive.PlatformServices.dll" />
       <Payload SourceFile="$(var.ToolsDir)\System.Reactive.Windows.Threading.dll" />
       <Payload SourceFile="$(var.ToolsDir)\System.Windows.Interactivity.dll" />
+	  <Payload SourceFile="$(var.ToolsDir)\MahApps.Metro.dll" />
 
       <!-- TODO:
       <Payload SourceFile="$(var.CustomUiDll)" />
