@@ -28,6 +28,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shimmer.WiXUi", "Shimmer.Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shimmer.WiXUiClient", "Shimmer.WiXUiClient\Shimmer.WiXUiClient.csproj", "{C8AB928D-0990-4A84-BB06-BEEDE0C7AB14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITester", "UITester\UITester.csproj", "{05896B34-A9AF-4AD5-BB85-C11D8AAC2F12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F84C302-8216-47E0-B822-B83B65D81309} = {5F84C302-8216-47E0-B822-B83B65D81309}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +71,10 @@ Global
 		{C8AB928D-0990-4A84-BB06-BEEDE0C7AB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8AB928D-0990-4A84-BB06-BEEDE0C7AB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8AB928D-0990-4A84-BB06-BEEDE0C7AB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05896B34-A9AF-4AD5-BB85-C11D8AAC2F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05896B34-A9AF-4AD5-BB85-C11D8AAC2F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05896B34-A9AF-4AD5-BB85-C11D8AAC2F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05896B34-A9AF-4AD5-BB85-C11D8AAC2F12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
